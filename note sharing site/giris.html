@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<?php
+include("kontrol.php");
+?>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş Yap & Kayıt Ol</title>
+  
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+
+
+
+  <div class="cotn_principal">
+<div class="cont_centrar">
+
+  <div class="cont_login">
+  
+<div class="cont_info_log_sign_up">
+
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+        <h2>Giriş</h2>  
+  <p>Giriş yapınız</p> 
+  <button class="btn_login" onclick="cambiar_login()">Giriş</button>
+  </div>
+  </div>
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>Kayıt Ol</h2>
+
+  
+  <p>Kayıt olunuz</p>
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+</div>
+  </div>
+       </div>
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="books.jpg" alt="" />
+       </div>
+       
+    </div>
+<div class="cont_forms"  >
+    <div class="cont_img_back_">
+       <img src="books.jpg" alt="" />
+       </div>
+ 
+
+ <form id="form1" name="form1" action="girisisle.php" method="post">
+<div class="cont_form_login">
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+   <h2>Giriş</h2>
+
+ <input type="text" name="kuladi" placeholder="Email" />
+<input type="password" name="sifre" placeholder="Password"/>
+<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+</form>
+
+  <form id="form1" name="form1" action="kayitisle.php" method="post">
+
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+     <h2>Kayıt</h2>
+<input type="text" name="kuladi" placeholder="Email" />
+<input type="password" name="sifre" placeholder="Password" />
+<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+
+  </div>
+</form>
+    </div>
+    
+  </div>
+ </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
